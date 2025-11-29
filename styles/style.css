@@ -1,11 +1,52 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #F5F5F5 ;
+    --texto: #222222 ;
+    --texto-inverso: #FFFFFF ;
+    --destaque: #441151 ;
+    --destaque-inverso: #CA61C3 ;
+    --fundo-card: #FFFFFF ;
 }
 
 body {
-    color: lightblue;
-    background-color: rgb(92, 152, 204);
+    font-family: "Inter", sans-serif;
+    line-height: 1.5em;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--destaque);
+    color: var(--texto);
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+nav#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 32px;
+    transition: 0.5s ease-in-out;
+}
+
+nav#menu a:hover {
+    background-color: var(--destaque-inverso);
+    color: var(--destaque);
 }
