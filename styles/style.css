@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 5.s ease-in-out ;
 }
 
 :root {
@@ -20,6 +21,15 @@ body {
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+}
+
+body.escuro {
+    --fundo-principal: #222222 ;
+    --texto: #E0E0E0 ;
+    --texto-inverso: #333333 ;
+    --destaque: #CA61C3 ;
+    --destaque-inverso: #441151 ;
+    --fundo-card: #444444 ;
 }
 
 header {
@@ -174,7 +184,7 @@ article h2 {
 
 #skill-container .progresso {
     height: 100%;
-    background-color: var(--destaque-inverso);
+    background-color: var(--destaque);
     border-radius: 4px;
 }
 
@@ -188,14 +198,14 @@ article h2 {
     padding: 8px 0;
     background-color: var(--fundo-principal);
     border-radius: 8px;
-    border-left: 5px solid var(--destaque-inverso);
+    border-left: 5px solid var(--destaque);
     padding-left: 16px;
     transition: .5s ease-in-out;
 }
 
 #formacao-container .curso:hover {
     border-left-width: 20px;
-    border-color: var(--destaque);
+    border-color: var(--destaque-inverso);
     cursor: pointer;
 }
 
@@ -206,7 +216,7 @@ article h2 {
 }
 
 #formacao-container .instituicao {
-    color: var(--destaque-inverso);
+    color: var(--destaque);
     font-size: 1.1em;
 }
 
