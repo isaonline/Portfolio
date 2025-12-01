@@ -300,6 +300,10 @@ footer a:hover {
         grid-column: 3 / 4;
     }
 
+    #video-container {
+    max-width: 900px;
+    }
+
     #skill-container {
         grid-template-columns: 1fr 1fr;
     }
