@@ -7,6 +7,8 @@ Projeto Final do Curso de HTML e CSS do Curso em Vídeo: Portfólio de projetos 
 
 ![Print mostrando o Portfólio](img/print.png)
 
+Para acessar o projeto [clique aqui!](https://isaonline.github.io/Portfolio/)
+
 ## Tabela de Conteúdo
 + [Sobre](#about)
 + [Etapas](#steps)
