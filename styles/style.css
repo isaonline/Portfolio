@@ -21,6 +21,7 @@ body {
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+    transition: .5s ease-in-out;
 }
 
 body.escuro {
